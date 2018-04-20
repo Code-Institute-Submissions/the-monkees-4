@@ -1,3 +1,7 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #47515B;
+}
 
 .header {
     position: fixed;
@@ -28,7 +32,7 @@
 .navbar {
 
     width: 100%;
-    background-color: transparent;
+    background-color: #47515B;
     border: 0;
     border-radius: 0;
     z-index: 1;
@@ -36,39 +40,47 @@
 
 .navbar .navbar-brand {
     font-family: 'Syncopate', sans-serif;
-    font-size: large;
+    font-size: 150%;
     color: #ffffff;
 }
 
 .navbar .navbar-brand:hover {
     font-family: 'Syncopate', sans-serif;
-    font-size: large;
+    font-size: 150%;
     color: #ffffff;
 }
 
-.navbar-default {
+.navbar-monkees {
     background-color: #47515B;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
 }
 
+.navbar-monkees:hover {
+    background-color: #47515B;
+    color: #DD5911;
+    
+}
 
-
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
+.navbar-monkees .navbar-nav>.active>a,
+.navbar-monkees .navbar-nav>.active>a:focus,
     {
     color: #ffffff;
     background-color: #47515B;
 }
 
-.navbar-default .navbar-nav>.active>a:hover {
+.navbar-monkees .navbar-nav>.active>a:hover {
     color: #DD5911;
     background-color: #47515B;
 }
 
-.navbar-default .navbar-nav>li>a:focus,
-.navbar-default .navbar-nav>li>a:hover {
-    color: white;
+.navbar-monkees .navbar-nav>li>a {
+    color: #ffffff;
+    background-color: #47515B;
+}
+.navbar-monkees .navbar-nav>li>a:focus,
+.navbar-monkees .navbar-nav>li>a:hover {
+    color: #ffffff;
     background-color: #47515b;
 }
 
@@ -76,21 +88,50 @@
 
 /**---------------- Jumbotron ---------------**/
 
+.callout-container {
+    height: 80vh;
+    background: url('/assets/images/monkees.jpg') no-repeat center center fixed;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
 .jumbotron {
     background-color: transparent;
+   
 }
 
 .jumbotron h1 {
-    color: white;
+    color: #DD5911;
+    font-family: 'Syncopate', sans-serif;
     font-weight: bold;
     margin-bottom: 30px;
     text-shadow: 2px 2px black;
+   
 }
 
 .jumbotron .lead {
     color: white;
     margin: 25px 0;
     text-shadow: 0.5px 0.5px black;
+ 
 }
 
 .jumbotron small {
@@ -98,7 +139,32 @@
     font-style: italic;
     color: white;
     text-shadow: 0.25px 0.25px black;
+    
 }
+
+/**---------------- BandBio ---------------**/
+.bandBio {
+    text-align: center;
+    margin: 20px;
+    font-size: 150%;
+}
+
+/**---------------- Quotes ---------------**/
+
+.quotes .page-header {
+    margin-bottom: 25px;
+}
+
+.quote {
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 160%;
+}
+
+.quote .cite {
+     font-family: 'Montserrat', sans-serif;
+}
+
+
 
 /**---------------- Footer ---------------**/
 
@@ -147,7 +213,7 @@
 
 .navbar-btn:hover {
     color: #ffffff;
-    background-color: #b0470d;
+    background-color: #DD5911;
     border: none;
 }
 
@@ -167,5 +233,6 @@
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
 }
+
 
 
