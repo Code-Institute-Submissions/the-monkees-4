@@ -209,6 +209,8 @@ body {
     width: 200px;
     background-color: #DD5911;
     color: #ffffff;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .navbar-btn:hover {
@@ -235,4 +237,41 @@ body {
 }
 
 
+.btn-monkeeQuery {
+    border: 0;
+    border-radius: 10px;
+    width: 200px;
+    background-color: #DD5911;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
 
+.btn-monkeeQuery:hover {
+    color: #ffffff;
+    background-color: #b0470d;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/**---------------- Contact us ---------------**/
+
+.contact-heading{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form{
+    margin: 0 auto;
+    max-width: 60%;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+    
