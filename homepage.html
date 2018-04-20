@@ -178,73 +178,123 @@
                                 </div>
                             </div>
                         </div>
-
                         </section>
-    </section>
 
+                        <!-- Modal -->
+                        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Sign up to Monkee Mail!</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="firstname">First name</label>
+                                                <input type="text" class="form-control" id="firstname" placeholder="First name(s)">
+                                            </div>
 
-    <!-- Footer -->
-    <footer class="page-footer">
-        <div class="text-center">
-            <ul class="list-unstyled list-inline">
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-lg">
+                                            <div class="form-group">
+                                                <label for="lastname">Last name</label>
+                                                <input type="text" class="form-control" id="lastname" placeholder="Last name(s)">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="email">Email address</label>
+                                                <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                                                <p class="help-block">We will never share your email address with anyone</p>
+                                            </div>
+
+                                            <div>
+                                                <label for="wherehear">Where did you hear about us?</label>
+                                                
+                                                <div class="radio">
+                                                    <label><input type="radio" name="internet">Internet</label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label><input type="radio" name="radio">Radio</label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label><input type="radio" name="newspaper">Newspaper</label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label><input type="radio" name="wordofmouth">Word of mouth</label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label><input type="radio" name="other">Other (please specify)</label>
+                                                </div>
+                                        </form>
+                                        </div>
+                                        <button type="submit" class="btn btn-monkeeMail">Sign up!</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <footer class="page-footer">
+                            <div class="text-center">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-lg">
                     <i class="fa fa-facebook"> </i>
                 </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-lg">
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-lg">
                     <i class="fa fa-twitter"> </i>
                 </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-lg">
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-lg">
                     <i class="fa fa-youtube"> </i>
                 </a>
-                </li>
-            </ul>
-        </div>
+                                    </li>
+                                </ul>
+                            </div>
 
-        <div class="container text-center">
-            <div class="col-md-12">
-                <div class="text-center">
-                    <ul class="list-unstyled text-uppercase font-weight-bold">
-                        <li>
-                            <a href="homepage.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="meettheband.html">Meet the band</a>
-                        </li>
-                        <li>
-                            <a href="events.html">Events</a>
-                        </li>
-                        <li>
-                            <a href="gallery.html">Gallery</a>
-                        </li>
-                        <li>
-                            <a href="contactus.html">Contact us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                            <div class="container text-center">
+                                <div class="col-md-12">
+                                    <div class="text-center">
+                                        <ul class="list-unstyled text-uppercase font-weight-bold">
+                                            <li>
+                                                <a href="homepage.html">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="meettheband.html">Meet the band</a>
+                                            </li>
+                                            <li>
+                                                <a href="events.html">Events</a>
+                                            </li>
+                                            <li>
+                                                <a href="gallery.html">Gallery</a>
+                                            </li>
+                                            <li>
+                                                <a href="contactus.html">Contact us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-            <div class="text-center">
-                <ul class="list-unstyled list-inline">
-                    <li class="list-inline-item">
-                        <a href="#!" class="btn btn-monkeeMail btn-rounded">Monkee Mail</a>
-                    </li>
-                </ul>
-            </div>
+                                <div class="text-center">
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="#!" class="btn btn-monkeeMail btn-rounded">Monkee Mail</a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-            <div class="footer-copyright text-center">
-                © 2018 Copyright Jennifer Dick
-            </div>
-    </footer>
-    <!-- Footer end -->
+                                <div class="footer-copyright text-center">
+                                    © 2018 Copyright Jennifer Dick
+                                </div>
+                        </footer>
+                        <!-- Footer end -->
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=" anonymous "></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
+                        <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=" anonymous "></script>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
 
 
 </body>
