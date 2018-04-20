@@ -1,0 +1,171 @@
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #F4742E;
+    padding: 15px 25px;
+}
+
+.section {
+    background-color: #98f2c8;
+    font-size: 20px;
+    height: 100%;
+    margin: 0;
+}
+
+
+
+@media (min-width: 768px) {
+    .column {
+        float: left;
+    }
+}
+
+/**---------------- Navbar ---------------**/
+
+.navbar {
+
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    z-index: 1;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Syncopate', sans-serif;
+    font-size: large;
+    color: #ffffff;
+}
+
+.navbar .navbar-brand:hover {
+    font-family: 'Syncopate', sans-serif;
+    font-size: large;
+    color: #ffffff;
+}
+
+.navbar-default {
+    background-color: #47515B;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+    {
+    color: #ffffff;
+    background-color: #47515B;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #DD5911;
+    background-color: #47515B;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    background-color: #47515b;
+}
+
+
+
+/**---------------- Jumbotron ---------------**/
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px black;
+}
+
+.jumbotron .lead {
+    color: white;
+    margin: 25px 0;
+    text-shadow: 0.5px 0.5px black;
+}
+
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
+    color: white;
+    text-shadow: 0.25px 0.25px black;
+}
+
+/**---------------- Footer ---------------**/
+
+.page-footer {
+    background-color: #bada55;
+    color: #ffffff;
+    min-height: 120px;
+    margin-left: auto;
+    padding: 20px;
+
+}
+
+.page-footer a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.page-footer a:hover {
+    background-color: #ffffff;
+    color: #bada55;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .page-footer a {
+        float: none;
+        width: 100%;
+        display: inline-block;
+    }
+}
+
+/**---------------- Buttons ---------------**/
+
+.navbar-btn {
+    border: 0;
+    border-radius: 10px;
+    width: 200px;
+    background-color: #DD5911;
+    color: #ffffff;
+}
+
+.navbar-btn:hover {
+    color: #ffffff;
+    background-color: #b0470d;
+    border: none;
+}
+
+.btn-monkeeMail {
+    border: 0;
+    border-radius: 10px;
+    width: 200px;
+    background-color: #DD5911;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-monkeeMail:hover {
+    color: #ffffff;
+    background-color: #b0470d;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
