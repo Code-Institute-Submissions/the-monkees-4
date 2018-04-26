@@ -55,22 +55,38 @@
     <section class="container-fluid">
         <div class="row bg-color-contact">
             <div>
-                <h2 class="contact-heading uppercase text-center">Got a query for us?</h3>
-                <h5 class="uppercase text-center">Drop us a message</h5>
-                </div>
-                
+                <h2 class="uppercase text-center">Got a query for us?</h2>
+                <h3 class="uppercase text-center">Drop us a message</h3>
+            </div>
+
             <div class="center-form">
                 <form>
-                    <input type="text" name="firstname" class="form-control" id="firstname" placeholder="First name(s)" required/>
-                    <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Last name(s)" required/>
-                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email address" required/>
-                    <textarea rows="8" name="monkeequery" class="form-control" id="monkeequery" placeholder="How can we help you?" required></textarea>
+                    <div class="form-group">
+                        <label for="firstname"></label>
+                        <input type="text" name="firstname" class="form-control" id="firstname" placeholder="First name(s)" required/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname"></label>
+                        <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Last name(s)" required/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emailaddress"></label>
+                        <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email address" required/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="monkeequery"></label>
+                        <textarea rows="8" name="monkeequery" class="form-control" id="monkeequery" placeholder="How can we help you?" required></textarea>
+                    </div>
+
                     <button type="submit" class="btn btn-monkeeQuery center-block">Send your query</button>
                 </form>
             </div>
         </div>
     </section>
- 
+
 
 
     <!-- Footer -->

@@ -1,6 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #47515B;
+    background-color: #F0F0F0;
 }
 
 .header {
@@ -26,6 +27,16 @@ body {
         float: left;
     }
 }
+
+.h1, h2 {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: bold;
+    font-size: 300%;
+}
+
+/**---------------- Click-through landing page ---------------**/
+
+
 
 /**---------------- Navbar ---------------**/
 
@@ -63,8 +74,7 @@ body {
 }
 
 .navbar-monkees .navbar-nav>.active>a,
-.navbar-monkees .navbar-nav>.active>a:focus,
-    {
+.navbar-monkees .navbar-nav>.active>a:focus {
     color: #ffffff;
     background-color: #47515B;
 }
@@ -84,13 +94,15 @@ body {
     background-color: #47515b;
 }
 
-
+.icon-bar {
+    background-color: #ffffff;
+}
 
 /**---------------- Jumbotron ---------------**/
 
 .callout-container {
-    height: 80vh;
-    background: url('/assets/images/monkees.jpg') no-repeat center center fixed;
+    height: 90vh;
+    background: url('/assets/images/monkees1.jpg') no-repeat center center fixed;
     
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -100,6 +112,8 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+    top:-20px;
+    
 }
 
 .opaque-overlay {
@@ -121,6 +135,7 @@ body {
 .jumbotron h1 {
     color: #DD5911;
     font-family: 'Syncopate', sans-serif;
+    font-size: 700%;
     font-weight: bold;
     margin-bottom: 30px;
     text-shadow: 2px 2px black;
@@ -128,27 +143,24 @@ body {
 }
 
 .jumbotron .lead {
-    color: white;
-    margin: 25px 0;
+    color: #DD5911;
+    margin: 12px 0;
     text-shadow: 0.5px 0.5px black;
  
 }
 
-.jumbotron small {
-    font-size: 60%;
-    font-style: italic;
-    color: white;
-    text-shadow: 0.25px 0.25px black;
-    
-}
+
 
 /**---------------- BandBio ---------------**/
 .bandBio {
     text-align: center;
-    margin: 20px;
+    margin: 30px;
     font-size: 150%;
 }
 
+.page-header{
+    margin: 0;
+}
 /**---------------- Quotes ---------------**/
 
 .quotes .page-header {
@@ -159,11 +171,6 @@ body {
     font-family: 'Sue Ellen Francisco', cursive;
     font-size: 160%;
 }
-
-.quote .cite {
-     font-family: 'Montserrat', sans-serif;
-}
-
 
 
 /**---------------- Footer ---------------**/
@@ -256,6 +263,92 @@ body {
     border: none;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.btn-events {
+    border: 0;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    background-color: #DD5911;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120%;
+}
+
+.btn-events:hover {
+    color: #ffffff;
+    background-color: #b0470d;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-book {
+    border: 0;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+    background-color: #bada55;
+    color: #47515B;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    cursor: hand:
+}
+
+
+
+/**---------------- Events ---------------**/
+.h2 {
+    font-family: 'Syncopate', sans-serif;
+}
+
+.timeline-item {
+    padding: 60px 30px 0px 30px;
+    position: relative;
+    color: #47515B;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item::before{
+    content: attr(dates);
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: Bold;
+    font-size: 120%;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item::after{
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 50px;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #47515B;
+}
+
+
+.events-heading{
+    color: #47515B;
+    margin-bottom: 50px;
+}
+
+.events-items{
+    margin-bottom: 30px;
 }
 
 /**---------------- Contact us ---------------**/
