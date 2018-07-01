@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Sue+Ellen+Francisco|Syncopate" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="/assets/images/cover2.png">
 </head>
 
 <body>
@@ -30,7 +31,7 @@
             <div class="navbar-collapse collapse" id="navbar">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="homepage.html">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li class="active">
                         <a href="meettheband.html">Meet the band</a>
@@ -57,49 +58,98 @@
         <div class="col-md-12">
             <h2 class="uppercase text-center">Upcoming events</h2>
         </div>
+
         <div class="row row-table">
-            <div class="col-xs-12 col-sm-12 col-md-4 bg-color-events">
-                <div class="row">
-
-                </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 bg-color-events">
+                
                 <div class="events-items">
-
                     <div class="timeline-item" dates="Friday 1st June 2018 7:30pm">
                         <h4>Chandler Center for the Arts, Chandler, AZ</h4>
                         <p>The Monkees present The Mike & Micky Show Details: The Monkees</p>
-                    </div>
-                    <div>
                         <a href="http://www.ticketmaster.com/the-monkees-present-the-mike-chandler-arizona-06-01-2018/event/190054419B9136AD?artistid=735678&majorcatid=10001&minorcatid=1&tm_link=artist_msg-0_190054419B9136AD" class="btn btn-book" target="_blank">Book now</a>
-</div>
+                    </div>
+                    
 
-                        <div class="timeline-item" dates="Sunday 3rd June 2018  8:00PM">
-                            <h4>Humphreys Concerts By the Bay San Diego, CA</h4>
-                            <p>The Monkees present The Mike & Micky Show Details: The Monkees</p>
-                        </div>
-                        <div>
-                        <a href="http://www.ticketmaster.com/the-monkees-present-the-mike-san-diego-california-06-03-2018/event/0A005450CF0631CF?artistid=735678&majorcatid=10001&minorcatid=1&tm_link=artist_msg-0_0A005450CF0631CF" class="btn btn-book" target="_blank">Book now</a>
-</div>
-                        <div class="timeline-item" dates="Friday 15th June 2018  8:00PM">
-                            <h4>The Rose Music Center at The Heights Huber Heights, OH</h4>
-                            <p>The Monkees present The Mike & Micky Show Details: The Monkees</p>
-                        </div>
-                        <div>
+                    <div class="timeline-item" dates="Sunday 3rd June 2018  8:00PM">
+                        <h4>Humphreys Concerts By the Bay San Diego, CA</h4>
+                        <p>The Monkees present The Mike & Micky Show Details: The Monkees</p>
+                         <a href="http://www.ticketmaster.com/the-monkees-present-the-mike-san-diego-california-06-03-2018/event/0A005450CF0631CF?artistid=735678&majorcatid=10001&minorcatid=1&tm_link=artist_msg-0_0A005450CF0631CF" class="btn btn-book" target="_blank">Book now</a>
+                    </div>
+                   
+                    
+                    <div class="timeline-item" dates="Friday 15th June 2018  8:00PM">
+                        <h4>The Rose Music Center at The Heights Huber Heights, OH</h4>
+                        <p>The Monkees present The Mike & Micky Show Details: The Monkees</p>
                         <a href="http://www.ticketmaster.com/the-monkees-present-the-mike-huber-heights-ohio-06-15-2018/event/1600543ECAC06F96?artistid=735678&majorcatid=10001&minorcatid=1&tm_link=artist_msg-0_1600543ECAC06F96" class="btn btn-book" target="_blank">Book now</a>
-</div>
-                        <div class="timeline-item" dates="Friday 22nd June 2018  8:00PM">
-                            <h4>Beacon Theatre New York, NY</h4>
-                            <p>The Monkees present The Mike & Micky Show Details: The Monkees</p>
-                        </div>
-                        <div>
+                    </div>
+                    
+                    
+                    <div class="timeline-item" dates="Friday 22nd June 2018  8:00PM">
+                        <h4>Beacon Theatre New York, NY</h4>
+                        <p>The Monkees present The Mike & Micky Show Details: The Monkees</p>
                         <a href="http://www.ticketmaster.com/the-monkees-present-the-mike-new-york-new-york-06-22-2018/event/3B00544BEAD4326A?artistid=735678&majorcatid=10001&minorcatid=1&tm_link=artist_msg-0_3B00544BEAD4326A" class="btn btn-book" target="_blank">Book now</a>
-</div>
                     </div>
                 </div>
+            </div>
     </section>
 
     <div>
         <a href="contactus.html" class="btn btn-events" target="_self">Getting married or having a party? </br> If you wish to enquire about booking us for an event click here!</a>
     </div>
+
+ <!-- Modal -->
+        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Sign up to Monkee Mail!</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="firstname">First name</label>
+                                <input type="text" class="form-control" id="firstname" placeholder="First name(s)">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastname">Last name</label>
+                                <input type="text" class="form-control" id="lastname" placeholder="Last name(s)">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                                <p class="help-block">We will never share your email address with anyone</p>
+                            </div>
+
+                            <div>
+                                <label for="wherehear">Where did you hear about us?</label>
+
+                                <div class="radio">
+                                    <label><input type="radio" name="internet">Internet</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="radio">Radio</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="newspaper">Newspaper</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="wordofmouth">Word of mouth</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="other">Other</label>
+                                </div>
+                        </form>
+                        </div>
+                        <button type="submit" class="btn btn-monkeeMail">Sign up!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     <!-- Footer -->
     <footer class="page-footer">
@@ -128,7 +178,7 @@
                 <div class="text-center">
                     <ul class="list-unstyled text-uppercase font-weight-bold">
                         <li>
-                            <a href="homepage.html">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
                             <a href="meettheband.html">Meet the band</a>
@@ -147,12 +197,13 @@
             </div>
 
             <div class="text-center">
-                <ul class="list-unstyled list-inline">
-                    <li class="list-inline-item">
-                        <a href="#!" class="btn btn-monkeeMail btn-rounded">Monkee Mail</a>
-                    </li>
-                </ul>
-            </div>
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+
+                            <button type="submit" class="btn btn-monkeeMail" data-toggle='modal' data-target='#signUpModal'>Monkee Mail</button>
+                        </li>
+                    </ul>
+                </div>
 
             <div class="footer-copyright text-center">
                 © 2018 Copyright Jennifer Dick

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Sue+Ellen+Francisco|Syncopate" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="/assets/images/cover2.png">
 </head>
 
 <body>
@@ -30,7 +31,7 @@
             <div class="navbar-collapse collapse" id="navbar">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="homepage.html">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li class="active">
                         <a href="meettheband.html">Meet the band</a>
@@ -55,10 +56,62 @@
 
  <section class="container-fluid">
  <div class="col-md-12">
-            <h2 class="uppercase text-center">Our tunes</h2>
+            <h2 class="uppercase text-center">Our gallery</h2>
         </div>
 </section>
 
+ <!-- Modal -->
+        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Sign up to Monkee Mail!</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="firstname">First name</label>
+                                <input type="text" class="form-control" id="firstname" placeholder="First name(s)">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastname">Last name</label>
+                                <input type="text" class="form-control" id="lastname" placeholder="Last name(s)">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                                <p class="help-block">We will never share your email address with anyone</p>
+                            </div>
+
+                            <div>
+                                <label for="wherehear">Where did you hear about us?</label>
+
+                                <div class="radio">
+                                    <label><input type="radio" name="internet">Internet</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="radio">Radio</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="newspaper">Newspaper</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="wordofmouth">Word of mouth</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="other">Other</label>
+                                </div>
+                        </form>
+                        </div>
+                        <button type="submit" class="btn btn-monkeeMail">Sign up!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     <!-- Footer -->
@@ -88,7 +141,7 @@
                 <div class="text-center">
                     <ul class="list-unstyled text-uppercase font-weight-bold">
                         <li>
-                            <a href="homepage.html">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
                             <a href="meettheband.html">Meet the band</a>
@@ -107,12 +160,13 @@
             </div>
 
             <div class="text-center">
-                <ul class="list-unstyled list-inline">
-                    <li class="list-inline-item">
-                        <a href="#!" class="btn btn-monkeeMail btn-rounded">Monkee Mail</a>
-                    </li>
-                </ul>
-            </div>
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+
+                            <button type="submit" class="btn btn-monkeeMail" data-toggle='modal' data-target='#signUpModal'>Monkee Mail</button>
+                        </li>
+                    </ul>
+                </div>
 
             <div class="footer-copyright text-center">
                 © 2018 Copyright Jennifer Dick

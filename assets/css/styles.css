@@ -28,15 +28,26 @@ body {
     }
 }
 
-.h1, h2 {
+.h1,
+h2 {
     font-family: 'Syncopate', sans-serif;
     font-weight: bold;
     font-size: 300%;
 }
 
+@media (min-width: 701px) {
+    .jumbotron {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    .jumbotron {
+        font-size: 5px;
+    }
+}
+
 /**---------------- Click-through landing page ---------------**/
-
-
 
 /**---------------- Navbar ---------------**/
 
@@ -70,7 +81,7 @@ body {
 .navbar-monkees:hover {
     background-color: #47515B;
     color: #DD5911;
-    
+
 }
 
 .navbar-monkees .navbar-nav>.active>a,
@@ -88,6 +99,7 @@ body {
     color: #ffffff;
     background-color: #47515B;
 }
+
 .navbar-monkees .navbar-nav>li>a:focus,
 .navbar-monkees .navbar-nav>li>a:hover {
     color: #ffffff;
@@ -103,7 +115,7 @@ body {
 .callout-container {
     height: 90vh;
     background: url('/assets/images/monkees1.jpg') no-repeat center center fixed;
-    
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -112,8 +124,8 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    top:-20px;
-    
+    top: -20px;
+
 }
 
 .opaque-overlay {
@@ -129,7 +141,6 @@ body {
 
 .jumbotron {
     background-color: transparent;
-   
 }
 
 .jumbotron h1 {
@@ -139,28 +150,27 @@ body {
     font-weight: bold;
     margin-bottom: 30px;
     text-shadow: 2px 2px black;
-   
 }
 
 .jumbotron .lead {
     color: #DD5911;
     margin: 12px 0;
     text-shadow: 0.5px 0.5px black;
- 
 }
 
 
-
 /**---------------- BandBio ---------------**/
+
 .bandBio {
     text-align: center;
     margin: 30px;
     font-size: 150%;
 }
 
-.page-header{
+.page-header {
     margin: 0;
 }
+
 /**---------------- Quotes ---------------**/
 
 .quotes .page-header {
@@ -170,17 +180,20 @@ body {
 .quote {
     font-family: 'Sue Ellen Francisco', cursive;
     font-size: 160%;
+    display: inline;
 }
 
 
 /**---------------- Footer ---------------**/
 
 .page-footer {
-    background-color: #bada55;
+    background-color: #47515B;
     color: #ffffff;
     min-height: 120px;
-    margin-left: auto;
-    padding: 20px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 
 }
 
@@ -189,18 +202,20 @@ body {
     display: block;
     color: #ffffff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 10px;
+    margin: 10px;
     text-decoration: none;
     font-weight: bold;
 }
 
 .page-footer a:hover {
-    background-color: #ffffff;
-    color: #bada55;
+    
+    color: #DD5911;
     border-radius: 10px;
+    text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
     .page-footer a {
         float: none;
         width: 100%;
@@ -208,163 +223,244 @@ body {
     }
 }
 
-/**---------------- Buttons ---------------**/
-
-.navbar-btn {
-    border: 0;
-    border-radius: 10px;
-    width: 200px;
+.second-footer {
     background-color: #DD5911;
     color: #ffffff;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    min-height: 80px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    text-decoration: none;
+    padding: 20px;
+   
 }
 
-.navbar-btn:hover {
-    color: #ffffff;
-    background-color: #DD5911;
-    border: none;
+.fa {
+  font-size: 30px;
+ width: 50px;
+ height: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 50%;
 }
 
-.btn-monkeeMail {
-    border: 0;
-    border-radius: 10px;
-    width: 200px;
-    background-color: #DD5911;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
+.fa:hover {
+    opacity: 0.8;
 }
 
-.btn-monkeeMail:hover {
-    color: #ffffff;
-    background-color: #b0470d;
-    border: none;
-    border-radius: 10px;
-    font-family: 'Montserrat', sans-serif;
+.fa-facebook {
+  background: #bada55;
+  color: white;
 }
 
-
-.btn-monkeeQuery {
-    border: 0;
-    border-radius: 10px;
-    width: 200px;
-    background-color: #DD5911;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+.fa-twitter {
+  background: #bada55;
+  color: white;
 }
-
-.btn-monkeeQuery:hover {
-    color: #ffffff;
-    background-color: #b0470d;
-    border: none;
-    border-radius: 10px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.btn-events {
-    border: 0;
-    border-radius: 10px;
-    padding: 30px;
-    margin: 20px;
-    background-color: #DD5911;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 120%;
-}
-
-.btn-events:hover {
-    color: #ffffff;
-    background-color: #b0470d;
-    border: none;
-    border-radius: 10px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.btn-book {
-    border: 0;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 20px;
-    background-color: #bada55;
-    color: #47515B;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 150%;
-    font-weight: bold;
-    cursor: hand:
+.fa-youtube {
+  background: #bada55;
+  color: white;
 }
 
 
+    /**---------------- Buttons ---------------**/
+    .navbar-btn {
+        border: 0;
+        border-radius: 10px;
+        width: 200px;
+        background-color: #DD5911;
+        color: #ffffff;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
 
-/**---------------- Events ---------------**/
-.h2 {
-    font-family: 'Syncopate', sans-serif;
-}
+    .navbar-btn:hover {
+        color: #ffffff;
+        background-color: #DD5911;
+        border: none;
+    }
 
-.timeline-item {
-    padding: 60px 30px 0px 30px;
-    position: relative;
-    color: #47515B;
-    border-left: 1px solid;
-}
+    .btn-monkeeMail {
+        border: 0;
+        border-radius: 10px;
+        width: 200px;
+        background-color: #DD5911;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+    }
 
-.timeline-item p {
-    padding: 0;
-    margin: 0;
-}
+    .btn-monkeeMail:hover {
+        color: #ffffff;
+        background-color: #b0470d;
+        border: none;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+    }
 
-.timeline-item::before{
-    content: attr(dates);
-    position: absolute;
-    left: 40px;
-    top: 50px;
-    display: block;
-    font-family: "Montserrat", sans-serif;
-    font-weight: Bold;
-    font-size: 120%;
-    padding: 0;
-    margin: 0;
-}
+.btn-monkeeMailFooter {
+        border: 0;
+        border-radius: 10px;
+        width: 200px;
+        background-color: #D3D3D3;
+        color: #47515B;
+        font-family: 'Montserrat', sans-serif;
+    }
 
-.timeline-item::after{
-    width: 12px;
-    height: 12px;
-    display: block;
-    top: 50px;
-    position: absolute;
-    left: -6px;
-    border-radius: 12px;
-    content: '';
-    background: #47515B;
-}
+    .btn-monkeeMailFooter:hover {
+        color: #47515B;
+        background-color: #BDBDBD;
+        border: none;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .btn-monkeeQuery {
+        border: 0;
+        border-radius: 10px;
+        width: 200px;
+        background-color: #DD5911;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .btn-monkeeQuery:hover {
+        color: #ffffff;
+        background-color: #b0470d;
+        border: none;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .btn-events {
+        border: 0;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 20px;
+        background-color: #DD5911;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 120%;
+    }
+
+    .btn-events:hover {
+        color: #ffffff;
+        background-color: #b0470d;
+        border: none;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .btn-book {
+        border: 0;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 20px;
+        background-color: #bada55;
+        color: #47515B;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 150%;
+        font-weight: bold;
+        cursor: hand;
+    }
+
+    /**---------------- Meet the band ---------------**/
+    .polaroid {
+        background-color: #47515B;
+        color: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 2px;
+        margin: 15px;
+        word-wrap: break-word;
+
+    }
+
+    .container {
+        padding: 10px 20px;
+
+    }
+
+    .fa-dot-circle-o {
+        color: #DD5911;
+        margin: 5px;
+    }
+
+    .profile {
+        display: block;
+        margin: auto;
+        padding-top: 20px;
+        width: 50%;
+    }
 
 
-.events-heading{
-    color: #47515B;
-    margin-bottom: 50px;
-}
+    /**---------------- Events ---------------**/
+    .h2 {
+        font-family: 'Syncopate', sans-serif;
+    }
 
-.events-items{
-    margin-bottom: 30px;
-}
+    .timeline-item {
+        padding: 60px 30px 0px 30px;
+        position: relative;
+        color: #47515B;
+        border-left: 1px solid;
+    }
 
-/**---------------- Contact us ---------------**/
+    .timeline-item p {
+        padding: 0;
+        margin: 0;
+    }
 
-.contact-heading{
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    margin-top: 25px;
-    margin-bottom: 20px;
-}
+    .timeline-item::before {
+        content: attr(dates);
+        position: absolute;
+        left: 40px;
+        top: 50px;
+        display: block;
+        font-family: "Montserrat", sans-serif;
+        font-weight: Bold;
+        font-size: 120%;
+        padding: 0;
+        margin: 0;
+    }
 
-.center-form{
-    margin: 0 auto;
-    max-width: 60%;
-    border-radius: 10px;
-    background-color: #f2f2f2;
-    padding: 15px;
-}
-    
+    .timeline-item::after {
+        width: 12px;
+        height: 12px;
+        display: block;
+        top: 50px;
+        position: absolute;
+        left: -6px;
+        border-radius: 12px;
+        content: '';
+        background: #47515B;
+    }
+
+
+    .events-heading {
+        color: #47515B;
+        margin-bottom: 50px;
+    }
+
+    .events-items {
+        margin-bottom: 30px;
+    }
+
+    /**---------------- Contact us ---------------**/
+    .contact-heading {
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    .center-form {
+        margin: 0 auto;
+        max-width: 60%;
+        border-radius: 10px;
+        background-color: #f2f2f2;
+        padding: 15px;
+    }
