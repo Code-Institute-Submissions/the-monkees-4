@@ -7,7 +7,7 @@
     <title>The Monkees | The greatest band</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Sue+Ellen+Francisco|Syncopate" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Syncopate" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="icon" href="/assets/images/cover2.png">
 </head>
@@ -53,7 +53,6 @@
         </div>
     </nav>
 
-
     <div class="container-fluid callout-container ">
         <div class="opaque-overlay ">&nbsp;</div>
 
@@ -82,8 +81,6 @@
         </div>
     </section>
 
-
-
     <section>
         <div class="container-wrapper">
             <div class="container quotes-container content-container">
@@ -91,15 +88,13 @@
                 <!-- Quotes -->
                 <section class="quotes">
                     <div class="row">
-
-
                     </div>
             </div>
 
             <div class="row">
                 <div class="col-md-2 col-sm-12 col-xs-12">
                     <div class="media">
-                        <img src="/assets/images/quote1-DC.png" class="img-circle media-object" alt="Dave Crabford photo" height=100 width=100>
+                        <img src="../assets/images/quote1-DC.png" class="img-circle media-object" alt="Dave Crabford photo" height=100 width=100>
                     </div>
                     <div class="media-body">
                         <blockquote class="quote">
@@ -115,7 +110,7 @@
         </div <div class="row">
         <div class="col-md-4 col-sm-12 col-xs-12">
             <div class="media ">
-                <img src="/assets/images/quote2-CP.png" class="img-circle media-object" alt="Claire Parks photo" height=100 width=100>
+                <img src="../assets/images/quote2-CP.png" class="img-circle media-object" alt="Claire Parks photo" height=100 width=100>
             </div>
             <div class="media-body">
                 <blockquote class="quote">
@@ -131,7 +126,7 @@
         <div class="row">
             <div class="col-md-4 col-sm-12 col-xs-12">
                 <div class="media ">
-                    <img src="/assets/images/quote3-JF.png" class="img-circle media-object" alt="Joe Forster photo" height=100 width=100>
+                    <img src="../assets/images/quote3-JF.png" class="img-circle media-object" alt="Joe Forster photo" height=100 width=100>
                 </div>
                 <div class="media-body">
                     <blockquote class="quote">
@@ -144,11 +139,10 @@
             </div>
         </div>
 
-
         <div class="row ">
             <div class="col-md-4 col-sm-12 col-xs-12">
                 <div class="media ">
-                    <img src="/assets/images/quote4-HA.png" class="img-circle media-object" alt="Heather Ackerton photo" height=100 width=100>
+                    <img src="../assets/images/quote4-HA.png" class="img-circle media-object" alt="Heather Ackerton photo" height=100 width=100>
                 </div>
                 <div class="media-body">
                     <blockquote class="quote">
@@ -165,7 +159,7 @@
         <div class="row">
             <div class="media">
                 <div class="col-md-4 col-sm-12 col-xs-12">
-                    <img src="/assets/images/quote5-ME.png" class="img-circle media-object" alt="Mikey Enoch photo" height=100 width=100>
+                    <img src="../assets/images/quote5-ME.png" class="img-circle media-object" alt="Mikey Enoch photo" height=100 width=100>
                 </div>
 
                 <div class="media-body">
@@ -179,7 +173,6 @@
             </div>
         </div>
         </section>
-
 
         <!-- Modal -->
         <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -207,36 +200,51 @@
                                 <p class="help-block">We will never share your email address with anyone</p>
                             </div>
 
-                            <div>
-                                <label for="wherehear">Where did you hear about us?</label>
+                            <div class="radio">
+                                <label>
+                                <input type="radio" name="modalOptions" id="internet" value="internet">
+                                Internet
+                                </label>
+                            </div>
 
-                                <div class="radio">
-                                    <label><input type="radio" name="internet">Internet</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="radio">Radio</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="newspaper">Newspaper</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="wordofmouth">Word of mouth</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="other">Other</label>
-                                </div>
-                        </form>
-                        </div>
-                        <button type="submit" class="btn btn-monkeeMail">Sign up!</button>
+                            <div class="radio">
+                                <label>
+                                <input type="radio" name="modalOptions" id="radio" value="radio">
+                                Radio
+                                </label>
+                            </div>
+
+                            <div class="radio">
+                                <label>
+                                <input type="radio" name="modalOptions" id="newspaper" value="newspaper">
+                                Newspaper
+                                </label>
+                            </div>
+
+                            <div class="radio">
+                                <label>
+                                <input type="radio" name="modalOptions" id="wordOfMouth" value="wordOfMouth">
+                                Word of mouth
+                                </label>
+                            </div>
+
+                            <div class="radio">
+                                <label>
+                                <input type="radio" name="modalOptions" id="other" value="other">
+                                Other
+                                </label>
+                            </div>
                         </form>
                     </div>
+                    <button type="submit" class="btn btn-monkeeMail">Sign up!</button>
                 </div>
             </div>
-        </div>
+            </div>
 
-        <!-- Footer -->
-        <footer class="page-footer">
-          
+
+            <!-- Footer -->
+            <footer class="page-footer">
+
                 <ul class="list-unstyled list-inline">
                     <li class="list-inline-item">
                         <a target="_blank" href="https://www.facebook.com/TheMonkees/" class="btn-floating btn-lg">
@@ -254,13 +262,12 @@
                 </a>
                     </li>
                 </ul>
-         
 
-            <div class="container text-center">
-                <div class="col-md-12">
-                   
-                        <ul class="list-unstyled text-uppercase font-weight-bold text-center">
-                            <li>
+                <div class="container text-center">
+                    <div class="col-md-12">
+
+                        <ul class="list-unstyled list-inline text-uppercase font-weight-bold text-center">
+                            <li class="list-inline-item">
                                 <a href="index.html">Home</a>
                             </li>
                             <li>
@@ -278,27 +285,24 @@
                         </ul>
                     </div>
                 </div>
-                
-                 <div class="second-footer">
-                <div class="text-center">
-                    <ul class="list-unstyled list-inline">
-                        <li class="list-inline-item">
 
-                            <button type="submit" class="btn btn-monkeeMailFooter" data-toggle='modal' data-target='#signUpModal'>Monkee Mail</button>
-                        </li>
-                    </ul>
-                </div>
-               
+                <div class="second-footer">
+                    <div class="text-center">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <button type="submit" class="btn btn-monkeeMailFooter" data-toggle='modal' data-target='#signUpModal'>Monkee Mail</button>
+                            </li>
+                        </ul>
+                    </div>
+
                     <div class="footer-copyright text-center">
                         © 2018 Copyright Jennifer Dick
                     </div>
                 </div>
-        </footer>
-        <!-- Footer end -->
-
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=" anonymous "></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
-
+            </footer>
+            <!-- Footer end -->
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=" anonymous "></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
 </body>
 
 </html>

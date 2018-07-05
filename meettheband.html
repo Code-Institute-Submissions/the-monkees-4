@@ -68,7 +68,7 @@
         <div class="row">
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="polaroid">
-                    <img src="/assets/images/monkees-black-white-md.jpg" alt="Micky Dolenz" class="profile">
+                    <img src="../images/monkees-black-white-md.jpg" alt="Micky Dolenz" class="profile">
                     <div>
                         <p><i class="fa fa-dot-circle-o fa-lg"></i>Mickey Dolenz</p>
                         <p><i class="fa fa-dot-circle-o fa-lg"></i>Born: LA, California, USA.</p>
@@ -78,10 +78,9 @@
                 </div>
             </div>
 
-
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="polaroid">
-                    <img src="/assets/images/monkees-black-white-mn.jpg" alt="Michael Nesmith" class="profile">
+                    <img src="../images/monkees-black-white-mn.jpg" alt="Michael Nesmith" class="profile">
                     <div>
                         <p><i class="fa fa-dot-circle-o fa-lg"></i>Michael Nesmith</p>
                         <p><i class="fa fa-dot-circle-o fa-lg"></i>Born: Houston, Texas, USA.</p>
@@ -92,10 +91,9 @@
                 </div>
             </div>
 
-
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="polaroid">
-                    <img src="/assets/images/monkees-black-white-pt.jpg" alt="Peter Tork" class="profile">
+                    <img src="../assets/images/monkees-black-white-pt.jpg" alt="Peter Tork" class="profile">
                     <div>
                         <p><i class="fa fa-dot-circle-o fa-lg"></i>Peter Tork</p>
                         <p><i class="fa fa-dot-circle-o fa-lg"></i>Born: Washington, D.C, USA.</p>
@@ -107,7 +105,7 @@
 
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="polaroid">
-                    <img src="/assets/images/monkees-black-white-dj.jpg" alt="Davy Jones" class="profile">
+                    <img src="../images/monkees-black-white-dj.jpg" alt="Davy Jones" class="profile">
                     <div>
                         <p><i class="fa fa-dot-circle-o fa-lg"></i>Davy Jones</p>
                         <p><i class="fa fa-dot-circle-o fa-lg"></i>Born: Lancashire, England.</p>
@@ -121,6 +119,7 @@
     </section>
     
      <!-- Modal -->
+        <!-- Modal -->
         <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -146,32 +145,46 @@
                                 <p class="help-block">We will never share your email address with anyone</p>
                             </div>
 
-                            <div>
-                                <label for="wherehear">Where did you hear about us?</label>
+                            <div class="radio">
+                                <label>
+                                <input type="radio" name="modalOptions" id="internet" value="internet">
+                                Internet
+                                </label>
+                            </div>
 
-                                <div class="radio">
-                                    <label><input type="radio" name="internet">Internet</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="radio">Radio</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="newspaper">Newspaper</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="wordofmouth">Word of mouth</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="other">Other</label>
-                                </div>
-                        </form>
-                        </div>
-                        <button type="submit" class="btn btn-monkeeMail">Sign up!</button>
+                            <div class="radio">
+                                <label>
+                                <input type="radio" name="modalOptions" id="radio" value="radio">
+                                Radio
+                                </label>
+                            </div>
+
+                            <div class="radio">
+                                <label>
+                                <input type="radio" name="modalOptions" id="newspaper" value="newspaper">
+                                Newspaper
+                                </label>
+                            </div>
+
+                            <div class="radio">
+                                <label>
+                                <input type="radio" name="modalOptions" id="wordOfMouth" value="wordOfMouth">
+                                Word of mouth
+                                </label>
+                            </div>
+
+                            <div class="radio">
+                                <label>
+                                <input type="radio" name="modalOptions" id="other" value="other">
+                                Other
+                                </label>
+                            </div>
                         </form>
                     </div>
+                    <button type="submit" class="btn btn-monkeeMail">Sign up!</button>
                 </div>
             </div>
-        </div>
+            </div>
 
     <!-- Footer -->
     <footer class="page-footer">
@@ -232,12 +245,7 @@
             </div>
     </footer>
     <!-- Footer end -->
-
-
     <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=" anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
-
-
 </body>
-
 </html>

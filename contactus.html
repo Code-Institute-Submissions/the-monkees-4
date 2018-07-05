@@ -89,7 +89,7 @@
     </section>
 
  <!-- Modal -->
-        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+       <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -114,33 +114,46 @@
                                 <p class="help-block">We will never share your email address with anyone</p>
                             </div>
 
-                            <div>
-                                <label for="wherehear">Where did you hear about us?</label>
+                            <div class="radio">
+                                <label>
+                                <input type="radio" name="modalOptions" id="internet" value="internet">
+                                Internet
+                                </label>
+                            </div>
 
-                                <div class="radio">
-                                    <label><input type="radio" name="internet">Internet</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="radio">Radio</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="newspaper">Newspaper</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="wordofmouth">Word of mouth</label>
-                                </div>
-                                <div class="radio">
-                                    <label><input type="radio" name="other">Other</label>
-                                </div>
-                        </form>
-                        </div>
-                        <button type="submit" class="btn btn-monkeeMail">Sign up!</button>
+                            <div class="radio">
+                                <label>
+                                <input type="radio" name="modalOptions" id="radio" value="radio">
+                                Radio
+                                </label>
+                            </div>
+
+                            <div class="radio">
+                                <label>
+                                <input type="radio" name="modalOptions" id="newspaper" value="newspaper">
+                                Newspaper
+                                </label>
+                            </div>
+
+                            <div class="radio">
+                                <label>
+                                <input type="radio" name="modalOptions" id="wordOfMouth" value="wordOfMouth">
+                                Word of mouth
+                                </label>
+                            </div>
+
+                            <div class="radio">
+                                <label>
+                                <input type="radio" name="modalOptions" id="other" value="other">
+                                Other
+                                </label>
+                            </div>
                         </form>
                     </div>
+                    <button type="submit" class="btn btn-monkeeMail">Sign up!</button>
                 </div>
             </div>
-        </div>
-
+            </div>
 
     <!-- Footer -->
     <footer class="page-footer">
