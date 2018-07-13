@@ -20,9 +20,7 @@ body {
     margin: 0;
 }
 
-
-
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .column {
         float: left;
     }
@@ -32,27 +30,30 @@ body {
 h2 {
     font-family: 'Syncopate', sans-serif;
     font-weight: bold;
-    font-size: 300%;
+    font-size: 60px;
 }
 
-@media (min-width: 701px) {
-    .jumbotron {
+@media screen and (min-width: 768px) {
+    .jumbotron{
         font-size: 15px;
     }
 }
 
-@media (max-width: 700px) {
-    .jumbotron {
+@media screen and (max-width: 768px) {
+    .jumbotron{
         font-size: 5px;
     }
 }
 
-/**---------------- Click-through landing page ---------------**/
+@media screen and (max-width: 768px) {
+    .h1, h2 {
+        font-size: 24px;
+    }
+}
 
 /**---------------- Navbar ---------------**/
 
 .navbar {
-
     width: 100%;
     background-color: #47515B;
     border: 0;
@@ -62,13 +63,13 @@ h2 {
 
 .navbar .navbar-brand {
     font-family: 'Syncopate', sans-serif;
-    font-size: 150%;
+    font-size: 14px;
     color: #ffffff;
 }
 
 .navbar .navbar-brand:hover {
     font-family: 'Syncopate', sans-serif;
-    font-size: 150%;
+    font-size: 14px;
     color: #ffffff;
 }
 
@@ -114,8 +115,7 @@ h2 {
 
 .callout-container {
     height: 90vh;
-    background: url('/assets/images/monkees1.jpg') no-repeat center center fixed;
-
+    background: url('../../assets/images/monkees1.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -125,7 +125,6 @@ h2 {
     justify-content: center;
     position: relative;
     top: -20px;
-
 }
 
 .opaque-overlay {
@@ -136,8 +135,6 @@ h2 {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
 }
-
-
 
 .jumbotron {
     background-color: transparent;
@@ -158,9 +155,7 @@ h2 {
     text-shadow: 0.5px 0.5px black;
 }
 
-
 /**---------------- BandBio ---------------**/
-
 .bandBio {
     text-align: center;
     margin: 30px;
@@ -172,20 +167,22 @@ h2 {
 }
 
 /**---------------- Quotes ---------------**/
-
 .quotes .page-header {
     margin-bottom: 25px;
 }
 
 .quote {
-    font-family: 'Sue Ellen Francisco', cursive;
-    font-size: 160%;
+    font-size: 120%;
     display: inline;
 }
 
+.quoteImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /**---------------- Footer ---------------**/
-
 .page-footer {
     background-color: #47515B;
     color: #ffffff;
@@ -194,32 +191,26 @@ h2 {
     left: 0;
     bottom: 0;
     width: 100%;
-
 }
 
+.page-footer li,
 .page-footer a {
-    float: left;
-    display: block;
+    display: inline-block;
     color: #ffffff;
     text-align: center;
-    padding: 10px 10px;
-    margin: 10px;
     text-decoration: none;
     font-weight: bold;
 }
 
 .page-footer a:hover {
-    
     color: #DD5911;
     border-radius: 10px;
     text-align: center;
 }
 
-@media screen and (max-width: 680px) {
-    .page-footer a {
-        float: none;
-        width: 100%;
-        display: inline-block;
+@media screen and (max-width: 768px) {
+    .page-footer-links li {
+        display: block;
     }
 }
 
@@ -232,17 +223,15 @@ h2 {
     bottom: 0;
     text-decoration: none;
     padding: 20px;
-   
 }
 
 .fa {
-  font-size: 30px;
- width: 50px;
- height: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px;
-  border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
 }
 
 .fa:hover {
@@ -250,217 +239,233 @@ h2 {
 }
 
 .fa-facebook {
-  background: #bada55;
-  color: white;
+    background: #bada55;
+    color: white;
 }
 
 .fa-twitter {
-  background: #bada55;
-  color: white;
+    background: #bada55;
+    color: white;
 }
+
 .fa-youtube {
-  background: #bada55;
-  color: white;
+    background: #bada55;
+    color: white;
+}
+
+/**---------------- Buttons ---------------**/
+.navbar-btn {
+    border: 0;
+    border-radius: 10px;
+    width: 200px;
+    background-color: #DD5911;
+    color: #ffffff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.navbar-btn:hover {
+    color: #ffffff;
+    background-color: #DD5911;
+    border: none;
+}
+
+.btn-monkeeMail {
+    border: 0;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100px;
+    background-color: #DD5911;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
 }
 
 
-    /**---------------- Buttons ---------------**/
-    .navbar-btn {
-        border: 0;
-        border-radius: 10px;
-        width: 200px;
-        background-color: #DD5911;
-        color: #ffffff;
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-
-    .navbar-btn:hover {
-        color: #ffffff;
-        background-color: #DD5911;
-        border: none;
-    }
-
-    .btn-monkeeMail {
-        border: 0;
-        border-radius: 10px;
-        width: 200px;
-        background-color: #DD5911;
-        color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .btn-monkeeMail:hover {
-        color: #ffffff;
-        background-color: #b0470d;
-        border: none;
-        border-radius: 10px;
-        font-family: 'Montserrat', sans-serif;
-    }
+.btn-monkeeMail:hover {
+    color: #ffffff;
+    background-color: #b0470d;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
 
 .btn-monkeeMailFooter {
-        border: 0;
-        border-radius: 10px;
-        width: 200px;
-        background-color: #D3D3D3;
-        color: #47515B;
-        font-family: 'Montserrat', sans-serif;
-    }
+    border: 0;
+    border-radius: 10px;
+    width: 200px;
+    background-color: #D3D3D3;
+    color: #47515B;
+    font-family: 'Montserrat', sans-serif;
+    float: none;
+}
 
-    .btn-monkeeMailFooter:hover {
-        color: #47515B;
-        background-color: #BDBDBD;
-        border: none;
-        border-radius: 10px;
-        font-family: 'Montserrat', sans-serif;
-    }
+.btn-monkeeMailFooter:hover {
+    color: #47515B;
+    background-color: #BDBDBD;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
 
-    .btn-monkeeQuery {
-        border: 0;
-        border-radius: 10px;
-        width: 200px;
-        background-color: #DD5911;
-        color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
+.btn-monkeeQuery {
+    border: 0;
+    border-radius: 10px;
+    width: 200px;
+    background-color: #DD5911;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
 
-    .btn-monkeeQuery:hover {
-        color: #ffffff;
-        background-color: #b0470d;
-        border: none;
-        border-radius: 10px;
-        font-family: 'Montserrat', sans-serif;
-    }
+.btn-monkeeQuery:hover {
+    color: #ffffff;
+    background-color: #b0470d;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
 
-    .btn-events {
-        border: 0;
-        border-radius: 10px;
-        padding: 30px;
-        margin: 20px;
-        background-color: #DD5911;
-        color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 120%;
-    }
+.btn-events {
+    border: 0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #DD5911;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
 
-    .btn-events:hover {
-        color: #ffffff;
-        background-color: #b0470d;
-        border: none;
-        border-radius: 10px;
-        font-family: 'Montserrat', sans-serif;
-    }
+.btn-events:hover {
+    color: #ffffff;
+    background-color: #b0470d;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
 
-    .btn-book {
-        border: 0;
-        border-radius: 10px;
-        padding: 15px;
-        margin: 20px;
-        background-color: #bada55;
-        color: #47515B;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 150%;
-        font-weight: bold;
-        cursor: hand;
-    }
-
-    /**---------------- Meet the band ---------------**/
-    .polaroid {
-        background-color: #47515B;
-        color: #ffffff;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        padding: 2px;
-        margin: 15px;
-        word-wrap: break-word;
-
-    }
-
-    .container {
-        padding: 10px 20px;
-
-    }
-
-    .fa-dot-circle-o {
-        color: #DD5911;
-        margin: 5px;
-    }
-
-    .profile {
-        display: block;
-        margin: auto;
-        padding-top: 20px;
-        width: 50%;
-    }
+#enquiry{
+    display: flex;
+    justify-content: center;
+}
 
 
-    /**---------------- Events ---------------**/
-    .h2 {
-        font-family: 'Syncopate', sans-serif;
-    }
 
-    .timeline-item {
-        padding: 60px 30px 0px 30px;
-        position: relative;
-        color: #47515B;
-        border-left: 1px solid;
-    }
+.btn-book {
+    border: 0;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+    background-color: #bada55;
+    color: #47515B;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: hand;
+}
 
-    .timeline-item p {
-        padding: 0;
-        margin: 0;
-    }
+/**---------------- Meet the band ---------------**/
+.polaroid {
+    display: inline-block;
+    background-color: #47515B;
+    color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2px;
+    margin: 15px;
+    word-wrap: break-word;
+    width: auto;
+    position: relative;
+}
 
-    .timeline-item::before {
-        content: attr(dates);
-        position: absolute;
-        left: 40px;
-        top: 50px;
-        display: block;
-        font-family: "Montserrat", sans-serif;
-        font-weight: Bold;
-        font-size: 120%;
-        padding: 0;
-        margin: 0;
-    }
+.container {
+    padding: 10px 20px;
+}
 
-    .timeline-item::after {
-        width: 12px;
-        height: 12px;
-        display: block;
-        top: 50px;
-        position: absolute;
-        left: -6px;
-        border-radius: 12px;
-        content: '';
-        background: #47515B;
-    }
+.fa-dot-circle-o {
+    color: #DD5911;
+    margin: 5px;
+}
+
+.profile {
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+    width: 50%;
+}
+
+/**---------------- Events ---------------**/
+.h2 {
+    font-family: 'Syncopate', sans-serif;
+}
+
+.timeline-item {
+    padding: 60px 30px 0px 30px;
+    position: relative;
+    color: #47515B;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item::before {
+    content: attr(dates);
+    top: 25px;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: Bold;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.timeline-item::after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 68px;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #47515B;
+}
+
+.events-heading {
+    color: #47515B;
+    margin-bottom: 50px;
+}
+
+.events-items {
+    margin-bottom: 30px;
+    text-align: center;
+}
 
 
-    .events-heading {
-        color: #47515B;
-        margin-bottom: 50px;
-    }
+/**---------------- Contact us ---------------**/
 
-    .events-items {
-        margin-bottom: 30px;
-    }
+.contact-heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
 
-    /**---------------- Contact us ---------------**/
-    .contact-heading {
-        font-family: "Montserrat", sans-serif;
-        font-weight: bold;
-        margin-top: 25px;
-        margin-bottom: 20px;
-    }
-
-    .center-form {
-        margin: 0 auto;
-        max-width: 60%;
-        border-radius: 10px;
-        background-color: #f2f2f2;
-        padding: 15px;
-    }
+.center-form {
+    margin: 0 auto;
+    max-width: 60%;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 15px;
+}
