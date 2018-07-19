@@ -34,19 +34,20 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-    .jumbotron{
+    .jumbotron {
         font-size: 15px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .jumbotron{
+    .jumbotron {
         font-size: 5px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .h1, h2 {
+    .h1,
+    h2 {
         font-size: 24px;
     }
 }
@@ -156,6 +157,7 @@ h2 {
 }
 
 /**---------------- BandBio ---------------**/
+
 .bandBio {
     text-align: center;
     margin: 30px;
@@ -167,6 +169,7 @@ h2 {
 }
 
 /**---------------- Quotes ---------------**/
+
 .quotes .page-header {
     margin-bottom: 25px;
 }
@@ -183,6 +186,7 @@ h2 {
 }
 
 /**---------------- Footer ---------------**/
+
 .page-footer {
     background-color: #47515B;
     color: #ffffff;
@@ -254,6 +258,7 @@ h2 {
 }
 
 /**---------------- Buttons ---------------**/
+
 .navbar-btn {
     border: 0;
     border-radius: 10px;
@@ -353,11 +358,10 @@ h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
-#enquiry{
+#enquiry {
     display: flex;
     justify-content: center;
 }
-
 
 
 .btn-book {
@@ -374,6 +378,7 @@ h2 {
 }
 
 /**---------------- Meet the band ---------------**/
+
 .polaroid {
     display: inline-block;
     background-color: #47515B;
@@ -402,7 +407,16 @@ h2 {
     width: 50%;
 }
 
+.bandMemberName {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #DD5911;
+}
+
 /**---------------- Events ---------------**/
+
 .h2 {
     font-family: 'Syncopate', sans-serif;
 }
@@ -452,6 +466,50 @@ h2 {
     text-align: center;
 }
 
+/**---------------- Library ---------------**/
+
+.carousel-inner {
+    height: 400px;
+    left: 25%;
+}
+
+.carousel-inner .item img {
+    max-height: 650px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.carousel-caption {
+    top: 58%;
+    transform: translateX(-40%);
+    bottom: initial;
+}
+
+#library1{
+    background-image: url("/assets/images/cover1.jpg");
+    background-size:50%;
+    height: 435px;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+#library2{
+    background-image: url("/assets/images/cover3.jpg");
+    background-size:50%;
+    height: 435px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#library3{
+    background-image: url("/assets/images/band.jpg");
+    background-size:40%;
+    height: 435px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 /**---------------- Contact us ---------------**/
 
