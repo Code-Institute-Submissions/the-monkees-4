@@ -487,7 +487,7 @@ h2 {
 }
 
 #library1{
-    background-image: url("/assets/images/cover1.jpg");
+    background-image: url("../../assets/images/cover1.jpg");
     background-size:50%;
     height: 435px;
     background-position: center;
@@ -496,7 +496,7 @@ h2 {
 }
 
 #library2{
-    background-image: url("/assets/images/cover3.jpg");
+    background-image: url("../../assets/images/cover3.jpg");
     background-size:50%;
     height: 435px;
     background-position: center;
@@ -504,7 +504,7 @@ h2 {
 }
 
 #library3{
-    background-image: url("/assets/images/band.jpg");
+    background-image: url("../../assets/images/band.jpg");
     background-size:40%;
     height: 435px;
     background-position: center;
