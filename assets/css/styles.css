@@ -236,6 +236,7 @@ h2 {
     text-align: center;
     line-height: 50px;
     vertical-align: middle;
+    font-size: x-large;
 }
 
 .fa:hover {
@@ -384,11 +385,11 @@ h2 {
     background-color: #47515B;
     color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 2px;
     margin: 15px;
     word-wrap: break-word;
     width: auto;
     position: relative;
+    height:680px;
 }
 
 .container {
@@ -409,10 +410,18 @@ h2 {
 
 .bandMemberName {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     font-size: 20px;
     font-weight: bold;
-    color: #DD5911;
+    color: #dd5911;
+}
+
+.meetTheBandFacts li:before{
+    font-family: 'FontAwesome';
+    content: '\f192';
+    margin: 0 5px 0 -15px;
+    color: #dd5911;
+    font-size: large;
 }
 
 /**---------------- Events ---------------**/
@@ -484,30 +493,28 @@ h2 {
     top: 58%;
     transform: translateX(-40%);
     bottom: initial;
+    color: #fff2e6;
 }
 
-#library1{
+#library1 {
     background-image: url("../../assets/images/cover1.jpg");
-    background-size:50%;
+    background-size: 50%;
     height: 435px;
-    background-position: center;
     background-repeat: no-repeat;
-   
+
 }
 
-#library2{
+#library2 {
     background-image: url("../../assets/images/cover3.jpg");
-    background-size:50%;
+    background-size: 50%;
     height: 435px;
-    background-position: center;
     background-repeat: no-repeat;
 }
 
-#library3{
+#library3 {
     background-image: url("../../assets/images/band.jpg");
-    background-size:40%;
+    background-size: 40%;
     height: 435px;
-    background-position: center;
     background-repeat: no-repeat;
 }
 
