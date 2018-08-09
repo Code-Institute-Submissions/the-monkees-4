@@ -1,7 +1,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #47515B;
-    background-color: #F0F0F0;
+    color: #47515b;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
 }
 
 .header {
@@ -9,7 +10,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #F4742E;
+    background-color: #f4742e;
     padding: 15px 25px;
 }
 
@@ -26,11 +27,39 @@ body {
     }
 }
 
-.h1,
-h2 {
+.h1, h2{
     font-family: 'Syncopate', sans-serif;
     font-weight: bold;
-    font-size: 60px;
+    text-align: center;
+}
+
+.h3, h4, h5, h6{
+     font-family: 'Montserrat', sans-serif;
+}
+
+.h1{
+    font-size:70px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+.h3 {
+    font-size: 35px;
+}
+
+.h4{
+   font-size:25px;
+}
+
+.h5{
+    font-size: 18px;
+    margin: 10px 20px;
+}
+
+.h6{
+    font-size:14px;
 }
 
 @media screen and (min-width: 768px) {
@@ -52,11 +81,12 @@ h2 {
     }
 }
 
+
 /**---------------- Navbar ---------------**/
 
 .navbar {
     width: 100%;
-    background-color: #47515B;
+    background-color: #47515b;
     border: 0;
     border-radius: 0;
     z-index: 1;
@@ -75,26 +105,26 @@ h2 {
 }
 
 .navbar-monkees {
-    background-color: #47515B;
+    background-color: #47515b;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
 }
 
 .navbar-monkees:hover {
     background-color: #47515B;
-    color: #DD5911;
+    color: #dd5911;
 
 }
 
 .navbar-monkees .navbar-nav>.active>a,
 .navbar-monkees .navbar-nav>.active>a:focus {
     color: #ffffff;
-    background-color: #47515B;
+    background-color: #47515b;
 }
 
 .navbar-monkees .navbar-nav>.active>a:hover {
-    color: #DD5911;
-    background-color: #47515B;
+    color: #dd5911;
+    background-color: #47515b;
 }
 
 .navbar-monkees .navbar-nav>li>a {
@@ -128,6 +158,12 @@ h2 {
     top: -20px;
 }
 
+@media screen and (max-width: 1200px) {
+    .callout-container {
+        height: 40vh;
+    }
+}
+
 .opaque-overlay {
     position: absolute;
     top: 0;
@@ -142,7 +178,7 @@ h2 {
 }
 
 .jumbotron h1 {
-    color: #DD5911;
+    color: #dd5911;
     font-family: 'Syncopate', sans-serif;
     font-size: 700%;
     font-weight: bold;
@@ -151,21 +187,37 @@ h2 {
 }
 
 .jumbotron .lead {
-    color: #DD5911;
+    color: #dd5911;
     margin: 12px 0;
     text-shadow: 0.5px 0.5px black;
 }
 
 /**---------------- BandBio ---------------**/
-
-.bandBio {
-    text-align: center;
-    margin: 30px;
-    font-size: 150%;
-}
-
 .page-header {
     margin: 0;
+}
+
+.band-bio {
+    margin: 30px;
+    font-size: 18px;
+}
+
+.band-bio-second-line {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .band-bio {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .band-bio-second-line {
+        font-size: 14px;
+    }
 }
 
 /**---------------- Quotes ---------------**/
@@ -175,20 +227,27 @@ h2 {
 }
 
 .quote {
-    font-size: 120%;
+    font-size: 16px;
     display: inline;
 }
 
-.quoteImage {
+.quote-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    height: 100px;
+    width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .quote {
+        font-size: 14px;
+    }
 }
 
 /**---------------- Footer ---------------**/
-
 .page-footer {
-    background-color: #47515B;
+    background-color: #47515b;
     color: #ffffff;
     min-height: 120px;
     text-align: center;
@@ -204,12 +263,21 @@ h2 {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px;
+}
+
+.page-footer ul,
+.page-footer a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .page-footer a:hover {
-    color: #DD5911;
+    color: #dd5911;
     border-radius: 10px;
-    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -219,7 +287,7 @@ h2 {
 }
 
 .second-footer {
-    background-color: #DD5911;
+    background-color: #dd5911;
     color: #ffffff;
     min-height: 80px;
     text-align: center;
@@ -229,7 +297,9 @@ h2 {
     padding: 20px;
 }
 
-.fa {
+.social-media .fa {
+    background: #bada55;
+    color: #ffffff;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -237,34 +307,26 @@ h2 {
     line-height: 50px;
     vertical-align: middle;
     font-size: x-large;
+    margin: 0px 15px;
 }
 
 .fa:hover {
     opacity: 0.8;
 }
 
-.fa-facebook {
-    background: #bada55;
-    color: white;
-}
-
-.fa-twitter {
-    background: #bada55;
-    color: white;
-}
-
-.fa-youtube {
-    background: #bada55;
-    color: white;
+@media screen and (max-width: 768px) {
+    .social-media .fa {
+        margin:0px;
+    }
 }
 
 /**---------------- Buttons ---------------**/
-
 .navbar-btn {
     border: 0;
     border-radius: 10px;
-    width: 200px;
-    background-color: #DD5911;
+    width: 105px;
+    font-size: 11px;
+    background-color: #dd5911;
     color: #ffffff;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -272,17 +334,17 @@ h2 {
 
 .navbar-btn:hover {
     color: #ffffff;
-    background-color: #DD5911;
+    background-color: #dd5911;
     border: none;
 }
 
-.btn-monkeeMail {
+.btn-monkee-mail {
     border: 0;
     border-radius: 10px;
     font-size: 12px;
     font-weight: bold;
     width: 100px;
-    background-color: #DD5911;
+    background-color: #dd5911;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     float: none;
@@ -292,8 +354,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-
-.btn-monkeeMail:hover {
+.btn-monkee-mail:hover {
     color: #ffffff;
     background-color: #b0470d;
     border: none;
@@ -301,29 +362,29 @@ h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
-.btn-monkeeMailFooter {
+.btn-monkee-mail-footer {
     border: 0;
     border-radius: 10px;
     width: 200px;
-    background-color: #D3D3D3;
-    color: #47515B;
+    background-color: #d3d3d3;
+    color: #47515b;
     font-family: 'Montserrat', sans-serif;
     float: none;
 }
 
-.btn-monkeeMailFooter:hover {
-    color: #47515B;
-    background-color: #BDBDBD;
+.btn-monkee-mail-footer:hover {
+    color: #47515b;
+    background-color: #bdbdbd;
     border: none;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
 }
 
-.btn-monkeeQuery {
+.btn-monkee-query {
     border: 0;
     border-radius: 10px;
     width: 200px;
-    background-color: #DD5911;
+    background-color: #dd5911;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 15px;
@@ -332,7 +393,7 @@ h2 {
     padding-top: 10px;
 }
 
-.btn-monkeeQuery:hover {
+.btn-monkee-query:hover {
     color: #ffffff;
     background-color: #b0470d;
     border: none;
@@ -343,9 +404,9 @@ h2 {
 .btn-events {
     border: 0;
     border-radius: 10px;
-    padding: 20px;
+    padding: 8px 60px;
     margin: 20px;
-    background-color: #DD5911;
+    background-color: #dd5911;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
@@ -364,14 +425,13 @@ h2 {
     justify-content: center;
 }
 
-
 .btn-book {
     border: 0;
     border-radius: 10px;
     padding: 15px;
     margin: 20px;
     background-color: #bada55;
-    color: #47515B;
+    color: #47515b;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     font-weight: bold;
@@ -379,28 +439,6 @@ h2 {
 }
 
 /**---------------- Meet the band ---------------**/
-
-.polaroid {
-    display: inline-block;
-    background-color: #47515B;
-    color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 15px;
-    word-wrap: break-word;
-    width: auto;
-    position: relative;
-    height:680px;
-}
-
-.container {
-    padding: 10px 20px;
-}
-
-.fa-dot-circle-o {
-    color: #DD5911;
-    margin: 5px;
-}
-
 .profile {
     display: block;
     margin: auto;
@@ -408,7 +446,7 @@ h2 {
     width: 50%;
 }
 
-.bandMemberName {
+.band-member-name {
     text-align: center;
     padding: 10px;
     font-size: 20px;
@@ -416,7 +454,7 @@ h2 {
     color: #dd5911;
 }
 
-.meetTheBandFacts li:before{
+.meet-the-band-facts li:before {
     font-family: 'FontAwesome';
     content: '\f192';
     margin: 0 5px 0 -15px;
@@ -424,16 +462,28 @@ h2 {
     font-size: large;
 }
 
-/**---------------- Events ---------------**/
-
-.h2 {
-    font-family: 'Syncopate', sans-serif;
+.meet-the-band-background {
+    background-color: #47515b;
+    padding: 10px;
+    margin: 10px;
 }
+
+.mtb-text {
+    color: #ffffff;
+}
+
+@media (min-width: 1200px) {
+    .meet-the-band-background {
+        width: 48%;
+    }
+}
+
+/**---------------- Events ---------------**/
 
 .timeline-item {
     padding: 60px 30px 0px 30px;
     position: relative;
-    color: #47515B;
+    color: #47515b;
     border-left: 1px solid;
 }
 
@@ -462,11 +512,11 @@ h2 {
     left: -6px;
     border-radius: 12px;
     content: '';
-    background: #47515B;
+    background: #47515b;
 }
 
-.events-heading {
-    color: #47515B;
+.events-header {
+    color: #47515b;
     margin-bottom: 50px;
 }
 
@@ -475,62 +525,70 @@ h2 {
     text-align: center;
 }
 
+.enquire-here {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .enquire-here {
+        font-size: 14px;
+    }
+}
+
 /**---------------- Library ---------------**/
-
-.carousel-inner {
-    height: 400px;
-    left: 25%;
+.video-center{
+    margin: 0 auto;
+    display:block;
 }
 
-.carousel-inner .item img {
-    max-height: 650px;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
+.audio-full-width{
+    width:100%;
 }
 
-.carousel-caption {
-    top: 58%;
-    transform: translateX(-40%);
-    bottom: initial;
-    color: #fff2e6;
+.library-background {
+    background-color: #47515b;
+    padding: 20px;
+    margin-bottom: 50px;
+    }
+
+.library-song-name {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #dd5911;
 }
 
-#library1 {
-    background-image: url("../../assets/images/cover1.jpg");
-    background-size: 50%;
-    height: 435px;
-    background-repeat: no-repeat;
-
+.library-song-facts-icon li:before {
+    font-family: 'FontAwesome';
+    content: '\f192';
+    margin: 0 5px 0 -15px;
+    color: #dd5911;
+    font-size: large;
 }
 
-#library2 {
-    background-image: url("../../assets/images/cover3.jpg");
-    background-size: 50%;
-    height: 435px;
-    background-repeat: no-repeat;
+.library-song-facts {
+    color: #ffffff;
 }
 
-#library3 {
-    background-image: url("../../assets/images/band.jpg");
-    background-size: 40%;
-    height: 435px;
-    background-repeat: no-repeat;
+.library-audio-background {
+    background-color: #47515b;
+    padding: 15px;
+    margin: 10px;
 }
 
 /**---------------- Contact us ---------------**/
-
-.contact-heading {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    margin-top: 25px;
-    margin-bottom: 20px;
-}
-
 .center-form {
     margin: 0 auto;
     max-width: 60%;
     border-radius: 10px;
     background-color: #f2f2f2;
     padding: 15px;
+}
+
+.form-group {
+    margin-bottom: 0px;
+}
+
+.form-control {
+    resize: none;
 }
