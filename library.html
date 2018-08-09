@@ -7,18 +7,16 @@
     <title>The Monkees | The greatest band</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Syncopate" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7CSyncopate" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="icon" href="/assets/images/cover2.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <nav class="navbar navbar-monkees">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a href="/" class="navbar-brand">
+                <a href="index.html" class="navbar-brand">
                     The Monkees
                 </a>
 
@@ -56,217 +54,201 @@
     </nav>
 
 
-    <section class="container-fluid">
-        <div class="col-md-12">
-            <h2 class="uppercase text-center">Our library</h2>
-        </div>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Our library</h2>
+                <h4>We are always making new music for you, our fans. We have created a library of some of your favourite tunes. Keep checking back to have a first glance at our newest music.</h4>
+            </div>
     </section>
+    </div>
+    </div>
+
 
     <div class="container">
-        <div id="monkeeLibrary" class="carousel slide" data-ride="carousel" data-type="multi" data-interval="false">
-
-            <ol class="carousel-indicators">
-                <li data-target="#monkeeLibrary" data-slide-to="0" class="active"></li>
-                <li data-target="#monkeeLibrary" data-slide-to="1"></li>
-                <li data-target="#monkeeLibrary" data-slide-to="2"></li>
-                <li data-target="#monkeeLibrary" data-slide-to="3"></li>
-            </ol>
-
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <video width="600" height="400" controls>
+        <div class="row">
+            <div class="col-lg-12 library-background">
+                <video class="video-center" width="100%" height="400" controls poster="/assets/images/the-monkees-daydream-believer-video-thumbnail.jpg">
                       <source src="/assets/video/TheMonkees.mp4" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
-                    <div class="carousel-caption">
-                        <h3>The Monkees!</h3>
-                        <p>Released: 1967</p>
-                    </div>
-                </div>
+                <p class="library-song-name">Daydream Believer</p>
+                <ul class="library-song-facts-icon" style="list-style-type:none">
+                    <li class="library-song-facts">Released: 1967</li>
+                    <li class="library-song-facts">Album: More of the Monkees</li>
+                    <li class="library-song-facts">Genre: Pop</li>
+                </ul>
+            </div>
+            </div>
+            </div>
 
-
-                <div class="item" id="library1">
-                    <audio controls>
-                        <source src="/assets/audio/Clarksville.mp3" type="audio/mpeg">
-                       Your browser does not support the audio tag.
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="library-audio-background">
+                        <audio controls>
+                      <source src="/assets/audio/Im-a-believer.mp3" type="audio/mp3">Your browser does not support the audio element.
                     </audio>
-                    <div class="carousel-caption">
-                        <h3>Last train to Clarksville</h3>
-                        <p>Released: 1966</p>
+                        <p class="library-song-name">I'm a Believer</p>
+                        <ul class="library-song-facts-icon" style="list-style-type:none">
+                            <li class="library-song-facts">Released: 1967</li>
+                            <li class="library-song-facts">Album: More of the Monkees</li>
+                            <li class="library-song-facts">Genre: Pop</li>
+                        </ul>
                     </div>
-                </div>
-
-                <div class="item" id="library2">
-                    <audio controls>
-                        <source src="/assets/audio/SteppingStone.mp3" type="audio/mpeg">
-                       Your browser does not support the audio tag.
-                    </audio>
-                    <div class="carousel-caption">
-                        <h3>(I'm Not Your) Steppin' Stone</h3>
-                        <p>Released: 1966</p>
                     </div>
-                </div>
 
-                <div class="item" id="library3">
-                     <audio controls>
-                        <source src="/assets/audio/DaydreamBeliever.mp3" type="audio/mpeg">
-                       Your browser does not support the audio tag.
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="library-audio-background">
+                        <audio controls>
+                      <source src="/assets/audio/Clarksville.mp3" type="audio/mp3">Your browser does not support the audio element.
                     </audio>
-                    <div class="carousel-caption">
-                        <h3>Daydream Believer</h3>
-                        <p>Released: 1968</p>
+                        <p class="library-song-name">Last Train to Clarksville</p>
+                        <ul class="library-song-facts-icon" style="list-style-type:none">
+                            <li class="library-song-facts">Released: 1966</li>
+                            <li class="library-song-facts">Album: Last Train to Clarksville</li>
+                            <li class="library-song-facts">Genre: Rock, Pop</li>
+                        </ul>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="library-audio-background">
+                        <audio controls>
+                      <source src="/assets/audio/SteppingStone.mp3" type="audio/mp3">Your browser does not support the audio element.
+                    </audio>
+                        <p class="library-song-name">(I'm Not Your) Steppin' Stone</p>
+                        <ul class="library-song-facts-icon" style="list-style-type:none">
+                            <li class="library-song-facts">Released: 1967</li>
+                            <li class="library-song-facts">Album: More of the Monkees</li>
+                            <li class="library-song-facts">Genre: Pop</li>
+                        </ul>
+                    </div>
                     </div>
                 </div>
             </div>
 
-            <a class="left carousel-control" href="#monkeeLibrary" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-            <a class="right carousel-control" href="#monkeeLibrary" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Sign up to Monkee Mail!</h4>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="firstname">First name</label>
-                            <input type="text" class="form-control" id="firstname" placeholder="First name(s)">
+            <!-- Modal -->
+            <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Sign up to Monkee Mail!</h4>
                         </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="firstname">First name</label>
+                                    <input type="text" class="form-control" id="firstname" placeholder="First name(s)">
+                                </div>
 
-                        <div class="form-group">
-                            <label for="lastname">Last name</label>
-                            <input type="text" class="form-control" id="lastname" placeholder="Last name(s)">
-                        </div>
+                                <div class="form-group">
+                                    <label for="lastname">Last name</label>
+                                    <input type="text" class="form-control" id="lastname" placeholder="Last name(s)">
+                                </div>
 
-                        <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email address">
-                            <p class="help-block">We will never share your email address with anyone</p>
-                        </div>
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                                    <p class="help-block">We will never share your email address with anyone</p>
+                                </div>
 
-                        <div class="radio">
-                            <label>
+                                <div class="radio">
+                                    <label>
                                 <input type="radio" name="modalOptions" id="internet" value="internet">
                                 Internet
                                 </label>
-                        </div>
+                                </div>
 
-                        <div class="radio">
-                            <label>
+                                <div class="radio">
+                                    <label>
                                 <input type="radio" name="modalOptions" id="radio" value="radio">
                                 Radio
                                 </label>
-                        </div>
+                                </div>
 
-                        <div class="radio">
-                            <label>
+                                <div class="radio">
+                                    <label>
                                 <input type="radio" name="modalOptions" id="newspaper" value="newspaper">
                                 Newspaper
                                 </label>
-                        </div>
+                                </div>
 
-                        <div class="radio">
-                            <label>
+                                <div class="radio">
+                                    <label>
                                 <input type="radio" name="modalOptions" id="wordOfMouth" value="wordOfMouth">
                                 Word of mouth
                                 </label>
-                        </div>
+                                </div>
 
-                        <div class="radio">
-                            <label>
+                                <div class="radio">
+                                    <label>
                                 <input type="radio" name="modalOptions" id="other" value="other">
                                 Other
                                 </label>
+                                </div>
+                            </form>
                         </div>
-                    </form>
+                        <button type="submit" class="btn btn-monkee-mail">Sign up!</button>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-monkeeMail">Sign up!</button>
             </div>
-        </div>
-    </div>
 
-    <!-- Footer -->
-    <footer class="page-footer">
-        <div class="row">
-            <div class="container">
-                <ul class="list-unstyled list-inline">
+            <!-- Footer -->
+                <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <ul>
                     <li>
-                        <a target="_blank" href="https://www.facebook.com/TheMonkees/" class="btn-floating btn-lg">
-            <i class="fa fa-facebook"> </i>
-        </a>
+                        <a target="_blank" href="https://www.facebook.com/TheMonkees/" class="btn-floating btn-lg social-media">
+            <i class="fa fa-facebook"></i></a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://twitter.com/themonkees?lang=en" class="btn-floating btn-lg">
-            <i class="fa fa-twitter"> </i>
-        </a>
+                        <a target="_blank" href="https://twitter.com/themonkees?lang=en" class="btn-floating btn-lg social-media">
+            <i class="fa fa-twitter"></i></a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://www.youtube.com/user/themonkees" class="btn-floating btn-lg">
-            <i class="fa fa-youtube"> </i>
-        </a>
+                        <a target="_blank" href="https://www.youtube.com/user/themonkees" class="btn-floating btn-lg social-media">
+            <i class="fa fa-youtube"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
 
         <div class="row">
-            <div class="container">
-                <div class="col-sm-12" style="background: #47515B; color:#ffffff; height:100px;">
-                    <ul class="list-unstyled list-inline text-uppercase font-weight-bold text-center page-footer-links">
-                        <li class="list-inline-item">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="meettheband.html">Meet the band</a>
-                        </li>
-                        <li>
-                            <a href="events.html">Events</a>
-                        </li>
-                        <li>
-                            <a href="library.html">Library</a>
-                        </li>
-                        <li>
-                            <a href="contactus.html">Contact us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <ul class="page-footer-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="meettheband.html">Meet the band</a>
+                </li>
+                <li>
+                    <a href="events.html">Events</a>
+                </li>
+                <li>
+                    <a href="library.html">Library</a>
+                </li>
+                <li>
+                    <a href="contactus.html">Contact us</a>
+                </li>
+            </ul>
         </div>
 
-        <div class="row">
-            <div class="second-footer">
-                <div class="col-sm-12" style="background: #DD5911; color:#ffffff; height:60px;">
-                    <ul class="list-unstyled list-inline">
-                        <li class="list-inline-item">
-                            <button type="submit" class="btn btn-monkeeMailFooter" data-toggle='modal' data-target='#signUpModal'>Monkee Mail</button>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer-copyright text-center">
-                    © 2018 Copyright Jennifer Dick
-                </div>
-            </div>
+        <div class="second-footer">
+            <ul>
+                <li>
+                    <button type="submit" class="btn btn-monkee-mail-footer" data-toggle='modal' data-target='#signUpModal'>Monkee Mail</button>
+                </li>
+            </ul>
+            <p>© 2018 Copyright Jennifer Dick</p>
+        </div>
     </footer>
     <!-- Footer end -->
 
-
     <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=" anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
-
-
 </body>
 
 </html>
