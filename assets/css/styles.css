@@ -2,7 +2,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #47515b;
     background-color: #f0f0f0;
-    overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 .header {
@@ -90,6 +91,8 @@ h2 {
     border: 0;
     border-radius: 0;
     z-index: 1;
+    margin:0px;
+    padding:0px;
 }
 
 .navbar .navbar-brand {
@@ -251,8 +254,6 @@ h2 {
     color: #ffffff;
     min-height: 120px;
     text-align: center;
-    left: 0;
-    bottom: 0;
     width: 100%;
 }
 
@@ -273,6 +274,7 @@ h2 {
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+    padding:0;
 }
 
 .page-footer a:hover {
@@ -291,10 +293,7 @@ h2 {
     color: #ffffff;
     min-height: 80px;
     text-align: center;
-    left: 0;
-    bottom: 0;
     text-decoration: none;
-    padding: 20px;
 }
 
 .social-media .fa {
@@ -579,7 +578,6 @@ h2 {
 /**---------------- Contact us ---------------**/
 .center-form {
     margin: 0 auto;
-    max-width: 60%;
     border-radius: 10px;
     background-color: #f2f2f2;
     padding: 15px;
@@ -591,4 +589,9 @@ h2 {
 
 .form-control {
     resize: none;
+}
+
+/**---------------- Modal ---------------**/
+.radio {
+    display:inline-block;
 }

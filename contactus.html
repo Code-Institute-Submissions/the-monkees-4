@@ -40,13 +40,13 @@
                         <a href="events.html">Events</a>
                     </li>
                     <li class="active">
-                         <a href="library.html">Library</a>
+                        <a href="library.html">Library</a>
                     </li>
                     <li class="active">
                         <a href="contactus.html">Contact us</a>
                     </li>
                 </ul>
-                <div class="navbar-header navbar-right hidden-xs">
+                <div class="navbar-header navbar-right hidden-sm">
                     <a href="/login" class='btn btn-monkeeMail navbar-btn' data-toggle='modal' data-target='#signUpModal'>Monkee Mail!</a>
                 </div>
             </div>
@@ -88,72 +88,74 @@
         </div>
     </section>
 
- <!-- Modal -->
-       <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Sign up to Monkee Mail!</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="firstname">First name</label>
-                                <input type="text" class="form-control" id="firstname" placeholder="First name(s)">
-                            </div>
+    <!-- Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Sign up to Monkee Mail!</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="firstname">First name</label>
+                            <input type="text" class="form-control" id="firstname" placeholder="First name(s)">
+                        </div>
 
-                            <div class="form-group">
-                                <label for="lastname">Last name</label>
-                                <input type="text" class="form-control" id="lastname" placeholder="Last name(s)">
-                            </div>
+                        <div class="form-group">
+                            <label for="lastname">Last name</label>
+                            <input type="text" class="form-control" id="lastname" placeholder="Last name(s)">
+                        </div>
 
-                            <div class="form-group">
-                                <label for="email">Email address</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email address">
-                                <p class="help-block">We will never share your email address with anyone</p>
-                            </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                            <p class="help-block">We will never share your email address with anyone</p>
+                        </div>
 
-                            <div class="radio">
-                                <label>
+                        <label>How did you hear about us?</label><br>
+                        <div class="radio">
+                            <label>
                                 <input type="radio" name="modalOptions" id="internet" value="internet">
                                 Internet
                                 </label>
-                            </div>
+                        </div>
 
-                            <div class="radio">
-                                <label>
+                        <div class="radio">
+                            <label>
                                 <input type="radio" name="modalOptions" id="radio" value="radio">
                                 Radio
                                 </label>
-                            </div>
+                        </div>
 
-                            <div class="radio">
-                                <label>
+                        <div class="radio">
+                            <label>
                                 <input type="radio" name="modalOptions" id="newspaper" value="newspaper">
                                 Newspaper
                                 </label>
-                            </div>
+                        </div>
 
-                            <div class="radio">
-                                <label>
+                        <div class="radio">
+                            <label>
                                 <input type="radio" name="modalOptions" id="wordOfMouth" value="wordOfMouth">
                                 Word of mouth
                                 </label>
-                            </div>
+                        </div>
 
-                            <div class="radio">
-                                <label>
+                        <div class="radio">
+                            <label>
                                 <input type="radio" name="modalOptions" id="other" value="other">
                                 Other
                                 </label>
-                            </div>
-                        </form>
-                    </div>
-                    <button type="submit" class="btn btn-monkee-mail">Sign up!</button>
+                        </div>
+                    </form>
                 </div>
+                <button type="submit" class="btn btn-monkee-mail">Sign up!</button>
             </div>
-            </div>
+        </div>
+    </div>
+    <!-- Modal end -->
 
     <!-- Footer -->
     <footer class="page-footer">
@@ -180,39 +182,41 @@
 
         <div class="container">
             <div class="row">
-                <ul class="page-footer-links">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="meettheband.html">Meet the band</a>
-                    </li>
-                    <li>
-                        <a href="events.html">Events</a>
-                    </li>
-                    <li>
-                        <a href="library.html">Library</a>
-                    </li>
-                    <li>
-                        <a href="contactus.html">Contact us</a>
-                    </li>
-                </ul>
+                <div class="col-xs-12">
+                    <ul class="page-footer-links">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="meettheband.html">Meet the band</a>
+                        </li>
+                        <li>
+                            <a href="events.html">Events</a>
+                        </li>
+                        <li>
+                            <a href="library.html">Library</a>
+                        </li>
+                        <li>
+                            <a href="contactus.html">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            </div>
+        </div>
 
-            <div class="second-footer">
-                <ul>
-                    <li>
-                        <button type="submit" class="btn btn-monkee-mail-footer" data-toggle='modal' data-target='#signUpModal'>Monkee Mail</button>
-                    </li>
-                </ul>
-                <p>© 2018 Copyright Jennifer Dick</p>
-            </div>
+        <div class="second-footer">
+            <ul>
+                <li>
+                    <button type="submit" class="btn btn-monkee-mail-footer" data-toggle='modal' data-target='#signUpModal'>Monkee Mail</button>
+                </li>
+            </ul>
+            <p>© 2018 Copyright Jennifer Dick</p>
+        </div>
     </footer>
     <!-- Footer end -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=" anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
-
 </body>
+
 </html>
