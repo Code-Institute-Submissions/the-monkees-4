@@ -21,7 +21,8 @@ I used Github for versioning on this project.
 
 ## Testing
 The testing that I completed for this project is listed below:
-* Ran my code through a code checker (https://validator.w3.org/)
+* Ran my html code through a code checker (https://validator.w3.org/)
+* Ran my css code through a code checker (https://jigsaw.w3.org/css-validator/validator)
 * Asked colleagues, friends and family to check this site and access from their own devices; any small changes were made and committed.
 * Checked every feature worked (and looked consistent) in both Google Chrome and Internet Explorer 10.
 * Used https://www.responsinator.com to test how well the website responded to different device sizes.
